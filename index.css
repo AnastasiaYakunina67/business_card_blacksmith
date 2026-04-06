@@ -1,0 +1,760 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1C1C1A;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/* Анимации */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.about-card, .uslugi-item, .material-item, .galery-img, .spicok-cont, .but {
+    animation: fadeInUp 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+.about-card:nth-child(2) { animation-delay: 0.2s; }
+.about-card:nth-child(3) { animation-delay: 0.4s; }
+.uslugi-item:nth-child(1) { animation-delay: 0.1s; }
+.uslugi-item:nth-child(2) { animation-delay: 0.2s; }
+.uslugi-item:nth-child(3) { animation-delay: 0.3s; }
+.uslugi-item:nth-child(4) { animation-delay: 0.4s; }
+.uslugi-item:nth-child(5) { animation-delay: 0.5s; }
+.material-item:nth-child(1) { animation-delay: 0.1s; }
+.material-item:nth-child(2) { animation-delay: 0.2s; }
+.material-item:nth-child(3) { animation-delay: 0.3s; }
+.material-item:nth-child(4) { animation-delay: 0.4s; }
+.material-item:nth-child(5) { animation-delay: 0.5s; }
+.galery-img:nth-child(1) { animation-delay: 0.1s; }
+.galery-img:nth-child(2) { animation-delay: 0.2s; }
+.galery-img:nth-child(3) { animation-delay: 0.3s; }
+.galery-img:nth-child(4) { animation-delay: 0.4s; }
+.galery-img:nth-child(5) { animation-delay: 0.5s; }
+.galery-img:nth-child(6) { animation-delay: 0.6s; }
+
+/* Ховер эффекты */
+.uslugi-item, .but a, .submit-btn, .galery-img {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.uslugi-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.but a:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+}
+
+.galery-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.material-item:hover {
+    transform: translateX(10px);
+    padding-left: 15px;
+}
+
+.baner{
+    background-image: url("../baner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 440px;
+    width: 100%;
+}
+    
+.header{
+    font-size: 22px;
+    font-weight: 300;
+    margin-left: 60px;
+    padding-top: 30px;
+    position: relative;
+}
+.logo{
+    float: left;
+}
+.header a{
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.header a:hover {
+    color: #ccc;
+}
+
+.spisok-header{
+    float: right;
+}
+
+.burger-menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    float: right;
+    margin-right: 20px;
+}
+
+.text-baner{
+    text-align: center;
+    margin-top: 115px;
+}
+h1{
+    font-size: 64px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+.main-text{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+.about{
+    margin: 50px 75px;
+}
+.about-card {
+    width: 770px;
+    margin: 10px auto;
+    height: 340px;
+}
+.about-card img{
+    width: 250px;
+    height: auto;
+}
+
+.about-text-left {
+    float: left;
+    width: 452px;
+    margin-top: 120px;
+}
+
+.about-text-right {
+    float: right;
+    width: 452px;
+    margin-top: 70px;
+}
+
+.about-img {
+    float: right;
+}
+
+.about-card-reverse .about-img {
+    float: left;
+}
+
+.uslugi{
+    margin: 100px 75px;
+}
+
+.uslugi-card{
+    display: grid;
+    grid-template-columns: repeat(3, 260px);
+    gap: 40px;
+    margin-top: 57px;
+    justify-content: center;
+}
+
+.uslugi-item {
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.uc125{
+    padding-top: 120px;
+    padding-left: 10px;
+}
+
+.uc34{
+    padding-top: 320px;
+    padding-left: 10px;
+    grid-row: span 2;
+}
+
+
+.material{
+    margin: 0 75px;
+    font-size: 22px;
+    font-weight: 700;
+}
+.material h1 {
+    line-height: 1.2;
+}
+.mat-spicok{
+    padding: 0;
+    margin: 0;         
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    margin-top: 50px;
+}
+.mat-spicok ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.material p{
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.material-item {
+    margin-bottom: 25px;
+    transition: all 0.3s ease;
+    line-height: 1.3;
+}
+
+
+.galery{
+    margin: 100px 75px;
+}
+.gal-card{
+    display: grid;
+    grid-template-columns: repeat(4, 260px);
+    gap: 40px;
+    margin-top: 57px;
+    justify-content: center;
+}
+
+.gal-card img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.gc12{
+    grid-column: span 2;
+}
+
+
+.contacts{
+    margin: 0 75px;
+    margin-bottom: 50px;
+}
+.contacts p{
+    font-size: 20px;
+    font-weight: 300;
+}
+.contacts img{
+    margin-right: 5px;
+}
+.spicok-cont{
+    float: left;
+    margin-top: 35px;
+}
+.but{
+    float: right;
+    margin-top: 140px;
+}
+.but a{
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 12px 24px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.but a:hover {
+    transform: scale(1.05);
+    background-color: #f5f5f5;
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.2);
+    letter-spacing: 1px;
+}
+
+.but a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.but a:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.contacts-wrapper::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer{
+    font-size: 20px;
+    font-weight: 300;
+    background-color: #3C3C38;
+    padding: 30px 80px;
+    line-height: 0.7;
+}
+
+/* Модальное окно */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    animation: fadeInUp 0.3s ease-out;
+}
+
+.modal-content {
+    background-color: #2C2C2A;
+    margin: 10% auto;
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    position: relative;
+    animation: scaleIn 0.3s ease-out;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #999;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.service-name {
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #3C3C38;
+    border-radius: 5px;
+}
+
+#applicationForm input,
+#applicationForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    background: #1C1C1A;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #ddd;
+    transform: scale(1.02);
+}
+
+/* Плавная прокрутка */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ========== АДАПТИВНОСТЬ ========== */
+
+@media (max-width: 1024px) {
+    .about-card {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .about-text-left, .about-text-right {
+        float: none;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .about-img {
+        float: none;
+        margin: 20px auto;
+    }
+    .uslugi-card {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 30px !important;
+    }
+    
+    .uslugi-card .uslugi-item {
+        grid-row: auto !important;
+        grid-column: auto !important;
+        min-height: 200px;
+        padding-top: 140px;
+        font-size: 18px;
+    }
+    
+    .uslugi-card .uslugi-item:last-child {
+        grid-column: span 2 !important;
+    }
+    
+    .gal-card {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        margin-top: 40px;
+    }
+    
+    .gal-card img {
+        height: 250px;
+    }
+    
+    .gc12 {
+        grid-column: span 1;
+    }
+    
+    .header {
+        margin-left: 30px;
+    }
+    
+    .header a {
+        margin: 0 10px;
+        font-size: 18px;
+    }
+    
+    h1 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    .spisok-header {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: #1C1C1A;
+        width: 200px;
+        flex-direction: column;
+        padding: 20px;
+        z-index: 100;
+    }
+    
+    .spisok-header.active {
+        display: flex;
+    }
+    
+    .spisok-header a {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .burger-menu {
+        display: block;
+    }
+    
+    .header {
+        margin-left: 20px;
+    }
+    
+    .logo {
+        font-size: 18px;
+    }
+    
+    .text-baner {
+        margin-top: 120px;
+        padding: 20px;
+    }
+    
+    .text-baner h1 {
+        font-size: 32px;
+    }
+    
+    .main-text {
+        font-size: 16px;
+    }
+    
+    .about, .uslugi, .material, .galery, .contacts {
+        margin: 50px 20px;
+    }
+    
+    .uslugi-card {
+        margin-top: 30px;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 25px !important;
+    }
+    
+    .uslugi-card .uslugi-item {
+        grid-column: auto !important;
+        min-height: 200px;
+        padding-top: 140px;
+        font-size: 18px;
+    }
+    
+    .material {
+        margin: 50px 20px;
+    }
+    
+    .mat-spicok {
+        margin-top: 30px;
+    }
+    
+    .material-item {
+        margin-bottom: 30px;
+    }
+    
+    .material h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    
+    .material p {
+        line-height: 1.4;
+        margin-top: 8px;
+    }
+    
+    .gal-card {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .gal-card img {
+        height: 200px;
+    }
+    
+    .contacts-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .spicok-cont, .but {
+        float: none;
+        text-align: center;
+        margin-top: 0;
+    }
+    
+    .footer {
+        padding: 20px;
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.4;
+    }
+    
+    h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .baner {
+        height: 350px;
+    }
+    
+    .text-baner {
+        margin-top: 60px;
+    }
+    
+    .text-baner h1 {
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+    
+    .main-text {
+        font-size: 14px;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+    
+    .about, .uslugi, .material, .galery, .contacts {
+        margin: 40px 15px;
+    }
+    
+    .about-card img {
+        width: 200px;
+    }
+    
+    .uslugi-card .uslugi-item {
+        min-height: 180px;
+        padding-top: 120px;
+        font-size: 16px;
+    }
+    
+    .material-item {
+        margin-bottom: 25px;
+    }
+    
+    .material p {
+        font-size: 14px;
+    }
+    
+    .gal-card {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .gal-card img {
+        height: 250px;
+    }
+    
+    .contacts p {
+        font-size: 16px;
+    }
+    
+    .but a {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    
+    .footer {
+        font-size: 12px;
+        padding: 15px;
+    }
+    
+    .footer br {
+        display: none;
+    }
+}
+
+@media (max-width: 360px) {
+    .baner {
+        height: 300px;
+    }
+    
+    .text-baner {
+        margin-top: 50px;
+    }
+    
+    .text-baner h1 {
+        font-size: 20px;
+    }
+    
+    .main-text {
+        font-size: 12px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    .about, .uslugi, .material, .galery, .contacts {
+        margin: 30px 15px;
+    }
+    
+    .about-card img {
+        width: 150px;
+    }
+    
+    .uslugi-card .uslugi-item {
+        min-height: 160px;
+        padding-top: 100px;
+        font-size: 14px;
+    }
+    
+    .material h1 {
+        line-height: 1.4;
+        margin-bottom: 15px;
+        font-size: 22px;
+    }
+    
+    .material p {
+        font-size: 12px;
+        line-height: 1.6;
+        margin-top: 8px;
+    }
+    
+    .material-item {
+        margin-bottom: 25px;
+        line-height: 1.5;
+    }
+    
+    .gal-card img {
+        height: 200px;
+    }
+    
+    .contacts p {
+        font-size: 14px;
+    }
+    
+    .but a {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    
+    .footer {
+        font-size: 10px;
+        padding: 15px;
+        line-height: 1.5;
+    }
+}
