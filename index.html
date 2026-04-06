@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Сайт-визитка - Художественная ковка</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <main>
+      <div class="baner">
+        <div class="header">
+          <div class="logo">ВОЛКОВ ДМИТРИЙ</div>
+          <div class="spisok-header"> 
+            <a href="#about">О МАСТЕРЕ</a>
+            <a href="#uslugi">УСЛУГИ</a>  
+            <a href="#galery">ГАЛЕРЕЯ РАБОТ</a>
+            <a href="#contacts">КОНТАКТЫ</a>
+          </div>
+          <div class="burger-menu">☰</div>
+        </div>
+        <div class="text-baner">
+          <h1>ХУДОЖЕСТВЕННАЯ КОВКА</h1>
+          <div class="main-text"> ИЗДЕЛИЯ ИЗ МЕТАЛЛА НА ЗАКАЗ <br><br>РЕШЁТКИ, ЗАБОРЫ, ЛЕСТНИЦЫ, МАНГАЛЫ, МЕБЕЛЬ, СВЕТИЛЬНИКИ – РУЧНАЯ РАБОТА С ДУШОЙ</div>
+        </div>
+      </div>
+
+      <div id="about" class="about">
+        <h1>О МАСТЕРЕ</h1>
+        <div class="about-card">
+          <div class="main-text about-text-left">Работаю с металлом более 10 лет. Начинал с мелких изделий – ключниц, светильников, подставок. Постепенно перешёл к серьёзным проектам: кованым решёткам, заборам, лестницам, мангалам.</div>
+          <img src="about1.png" alt="Мастер за работой" class="about-img">
+        </div>
+        <div class="about-card about-card-reverse">
+          <img src="about2.png" alt="Изделия из металла" class="about-img">
+          <div class="main-text about-text-right">
+            Каждое изделие создаю вручную, от эскиза до финальной обработки. Не использую штамповку и конвейер. Только ручная ковка, только индивидуальный подход.
+            <br><br>
+            Металл для меня – не просто материал. Это возможность сделать вещь, которая будет служить десятилетиями и радовать глаз каждый день.
+          </div>
+        </div>
+      </div>
+
+      <div id="uslugi" class="uslugi">
+        <h1 style="text-align: right;">ПРЕДЛАГАЕМЫЕ УСЛУГИ</h1>
+        <div class="uslugi-card">
+          <div class="uslugi-item uc125" data-service="Кованые решетки" style="background-image: url('uslugi1.png');">Кованые решетки</div>
+          <div class="uslugi-item uc34" data-service="Лестницы и перила" style="background-image: url('uslugi3.png');">Лестницы и перила</div>
+          <div class="uslugi-item uc34" data-service="Мангалы и барбекю" style="background-image: url('uslugi4.png');">Мангалы и барбекю</div>
+          <div class="uslugi-item uc125" data-service="Заборы и ворота" style="background-image: url('uslugi2.png');">Заборы и ворота</div>
+          <div class="uslugi-item uc125" data-service="Предметы интерьера" style="background-image: url('uslugi5.png'); grid-column: span 3;">Предметы интерьера</div>
+        </div>
+      </div>
+
+      <div class="material">
+        <h1>МАТЕРИАЛЫ И ТЕХНОЛОГИИ</h1>
+        <div class="mat-spicok">
+          <ul>
+            <li class="material-item">Любые материалы
+              <p>Чёрный металл, нержавейка, латунь, медь – подберу под вашу задачу</p></li>
+            <li class="material-item">Защита от коррозии
+              <p>Никакой ржавчины. Порошковая покраска или патинирование – на выбор</p></li>
+            <li class="material-item">Гарантия 12 месяцев
+              <p>Отвечаю за свою работу. Если что-то пойдёт не так – исправлю</p></li>
+            <li class="material-item">Бесплатный выезд
+              <p>Приеду сам, всё замерю. Никаких доплат за консультацию на месте</p></li>
+            <li class="material-item">3D-эскиз
+              <p>Посмотрите точный дизайн до начала работы. Без сюрпризов</p></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="galery" class="galery">
+        <h1 style="text-align: right;">ГАЛЕРЕЯ РАБОТ</h1>
+        <div class="gal-card">
+          <img src="galery1.png" class="gc12 galery-img" alt="Работа 1">
+          <img src="galery2.png" class="gc12 galery-img" alt="Работа 2">
+          <img src="galery3.png" class="galery-img" alt="Работа 3">
+          <img src="galery4.png" class="galery-img" alt="Работа 4">
+          <img src="galery5.png" class="galery-img" alt="Работа 5">
+          <img src="galery6.png" class="galery-img" alt="Работа 6">
+        </div>
+      </div>
+
+      <div id="contacts" class="contacts">
+        <h1>КОНТАКТЫ</h1>
+        <p>Если вы хотите узнать подробнее о ценах, услугах, получить ответы на другие вопросы или договориться о встрече – заполните контактную форму или выберите удобный для вас способ связи</p>
+        
+        <div class="contacts-wrapper">
+          <div class="spicok-cont">
+            <p><img src="phone.png" alt="phone"> +1(234)567-89-00</p>
+            <p><img src="email.png" alt="email"> blacksmith@mail.ru</p>
+            <p><img src="map.png" alt="map"> г. Самара, Московское шоссе, д.41</p>
+          </div>
+          
+          <div class="but">
+            <a href="#" class="consultation-btn">Получить консультацию</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="footer">
+      <p>© 2026 Волков Дмитрий. Художественная ковка</p>
+      <br>
+      <p>Разработка сайта: Анастасия Якунина – t.me/suharik_rik</p>
+      <p>Изображения: Freepik.com (автор: @serhiibobyk ), Unsplash.com</p>
+    </div>
+
+    <!-- Модальное окно -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Оставить заявку</h2>
+        <p class="service-name">Услуга: <span id="selectedService"></span></p>
+        <form id="applicationForm">
+          <input type="text" placeholder="Ваше имя" required>
+          <input type="tel" placeholder="Ваш телефон" required>
+          <input type="email" placeholder="Ваш email">
+          <textarea placeholder="Комментарий" rows="4"></textarea>
+          <button type="submit" class="submit-btn">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
